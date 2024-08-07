@@ -1,0 +1,29 @@
+.financial p {
+    font-size: 16px;
+    line-height: 0;
+    padding-top: 10px;
+}
+
+.line {
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.616);
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.small-circle {
+    width: 40px;
+    /* Adjust the size as needed */
+    height: 43px;
+    /* Adjust the size as needed */
+    background-color: gray;
+    /* Gray color for the circle */
+    border-radius: 50%;
+    /* Makes the circle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    /* Icon color */
+}
