@@ -14,9 +14,9 @@
 
 .small-circle {
     width: 40px;
-    /* Adjust the size as needed */
-    height: 43px;
-    /* Adjust the size as needed */
+    /* Adjust size as needed */
+    height: 40px;
+    /* Adjust size as needed */
     background-color: gray;
     /* Gray color for the circle */
     border-radius: 50%;
@@ -26,4 +26,32 @@
     justify-content: center;
     color: white;
     /* Icon color */
+}
+
+.person-data {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+    /* Adjust as needed */
+}
+
+.work-text {
+    margin: 0;
+    font-size: 12px;
+    color: #666;
+    /* Light gray for the label */
+    line-height: 1;
+    /* Ensures proper spacing */
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    /* Centers items vertically */
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    /* Centers icon vertically within its container */
 }
