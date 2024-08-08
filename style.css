@@ -1,15 +1,19 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
 .financial p {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 0;
     padding-top: 10px;
 }
 
 .line {
     height: 1px;
-    background-color: rgba(0, 0, 0, 0.616);
+    background-color: rgba(0, 0, 0, 0.233);
     width: 100%;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .small-circle {
@@ -63,4 +67,10 @@
     padding: 10px;
     border: none;
     border-radius: 12px;
+}
+
+.main-name {
+    font-size: 20px;
+    font-weight: 500;
+
 }
