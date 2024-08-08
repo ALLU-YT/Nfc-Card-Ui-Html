@@ -125,7 +125,71 @@
             </tr>
         </table>
 
+        <!-- services -->
+        <div class="line-container" style="margin-top: 20px;">
+
+            <div class="line_1"></div>
+            <div class="between-line-text">Services</div>
+            <div class="line_1"></div>
+        </div>
+        <div class="col col-sm-6">
+
+            <div class="card">
+                <img src="https://img.freepik.com/premium-photo/services-customer-support-business-technology-concept-screen_820340-46832.jpg?ga=GA1.1.1781919005.1721706251&semt=ais_hybrid"
+                    alt="">
+                <h1 class="heading">Consulting</h1>
+                <p class="description">This is a description of the</p>
+                <a href="">Know More</a>
+            </div>
+        </div>
+        <div class="col col-sm-6" style="margin-top: 20px;">
+
+            <div class="card">
+                <img src="https://img.freepik.com/premium-photo/services-customer-support-business-technology-concept-screen_820340-46832.jpg?ga=GA1.1.1781919005.1721706251&semt=ais_hybrid"
+                    alt="">
+                <h1 class="heading">Consulting</h1>
+                <p class="description">This is a description of the</p>
+                <a href="">Know More</a>
+            </div>
+        </div>
+
+
+        <!-- Gallery -->
+        <div class="line-container" style="margin-top: 20px;">
+
+            <div class="line_1"></div>
+            <div class="between-line-text">Gallery</div>
+            <div class="line_1"></div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="slider">
+                    <div class="slides">
+                        <img src="home-interior-design-arrangement (1).jpg" alt="Image 1">
+                        <img src="home-interior-design-arrangement.jpg" alt="Image 2">
+                        <img src="medium-shot-girl-recording-her-makeup-routine.jpg" alt="Image 3">
+                        <img src="home-interior-design-arrangement (1).jpg" alt="Image 1">
+                        <img src="home-interior-design-arrangement.jpg" alt="Image 2">
+                        <img src="medium-shot-girl-recording-her-makeup-routine.jpg" alt="Image 3">
+                        <img src="home-interior-design-arrangement (1).jpg" alt="Image 1">
+                        <img src="home-interior-design-arrangement.jpg" alt="Image 2">
+                        <img src="medium-shot-girl-recording-her-makeup-routine.jpg" alt="Image 3">
+                        <img src="home-interior-design-arrangement (1).jpg" alt="Image 1">
+                        <img src="home-interior-design-arrangement.jpg" alt="Image 2">
+                        <img src="medium-shot-girl-recording-her-makeup-routine.jpg" alt="Image 3">
+
+                    </div>
+                    <button class="arrow arrow-left" onclick="prevSlide()">&#10094;</button>
+                    <button class="arrow arrow-right" onclick="nextSlide()">&#10095;</button>
+                </div>
+            </div>
+        </div>
+
+
+
     </div>
+
+
 
 
     <div style="height: 100px;">
@@ -142,6 +206,34 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelector('.slides');
+        const slideImages = document.querySelectorAll('.slides img');
+        const totalSlides = slideImages.length;
+
+        function showSlide(index) {
+            if (index >= totalSlides) {
+                currentSlide = 0;
+            } else if (index < 0) {
+                currentSlide = totalSlides - 1;
+            } else {
+                currentSlide = index;
+            }
+            const offset = -currentSlide * 100;
+            slides.style.transform = `translateX(${offset}%)`;
+        }
+
+        function prevSlide() {
+            showSlide(currentSlide - 1);
+        }
+
+        function nextSlide() {
+            showSlide(currentSlide + 1);
+        }
+
+        showSlide(currentSlide);
+    </script>
 
 </body>
 
