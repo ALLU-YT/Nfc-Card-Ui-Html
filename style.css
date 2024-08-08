@@ -5,7 +5,7 @@ body {
 .financial p {
     font-size: 15px;
     line-height: 0;
-    padding-top: 10px;
+
 }
 
 .line {
@@ -34,9 +34,11 @@ body {
 
 .person-data {
     margin: 0;
-    font-size: 15px;
-    font-weight: 700;
-    /* Adjust as needed */
+
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #000000;
 }
 
 .work-text {
@@ -61,7 +63,7 @@ body {
 }
 
 .addtocart-btn {
-    background: rgb(4, 71, 4);
+    background: #4d8144;
     color: white;
     width: 100%;
     padding: 10px;
@@ -71,6 +73,11 @@ body {
 
 .main-name {
     font-size: 20px;
-    font-weight: 500;
+    font-weight: bold;
 
+}
+
+.business-Hours p {
+    font-size: 14px;
+    color: #0000007a;
 }
