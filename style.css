@@ -77,7 +77,39 @@ body {
 
 }
 
-.business-Hours p {
-    font-size: 14px;
-    color: #0000007a;
+
+
+.line-container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.line_1 {
+    flex: 1;
+    border-bottom: 1px solid #00000054;
+    /* Adjust the color and thickness of the line as needed */
+}
+
+.between-line-text {
+    padding: 0 10px;
+    font-size: 15px;
+    color: #000000c4;
+    font-weight: 400;
+
+}
+
+.business-hours-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.business-hours-table td {
+    padding: 8px;
+    text-align: center;
+}
+
+.business-hours-table tr:nth-child(even) {
+    background-color: #f2f2f2;
 }
