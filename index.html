@@ -144,7 +144,7 @@
                     <div class="text-content">
                         <h1 class="heading">Consulting</h1>
                         <p class="description">This is a description of the</p>
-                        <a href="">Know More</a>
+                        <button class="know-more-btn">Know More</button>
                     </div>
                 </div>
             </div>
@@ -225,8 +225,8 @@
 
     <div style="position: fixed; bottom: 10px; left: 10px; right: 10px;">
         <div style="display: flex;">
-            <button class="addtocart-btn">Contact</button>
-            <button class="addtocart-btn" style="padding: 15px; font-size: 16px;">Contact</button>
+            <button class="addtocart-btn" onclick="showModal_1()">Make Contact</button>
+            <button class="addtocart-btn" style="padding: 15px; font-size: 16px;">Save Card</button>
         </div>
     </div>
 
@@ -265,6 +265,41 @@
         </div>
     </div>
 
+
+
+
+
+
+    <!-- // -->
+    <div id="modal-overlay_1" class="overlay_1"></div>
+    <div id="modal-dialog_1" class="modal_1">
+        <button class="close-button_1" onclick="hideModal_1()">×</button>
+        <div class="modal-content_1">
+            <h2>Contact Us</h2>
+            <form id="contact-form_1">
+                <div class="form-group_1">
+                    <label for="name_1">Enter Your Name:</label>
+                    <input type="text" id="name_1" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group_1">
+                    <label for="email_1">Email Address:</label>
+                    <input type="email" id="email_1" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group_1">
+                    <label for="phone_1">Phone Number:</label>
+                    <input type="tel" id="phone_1" name="phone" placeholder="Your Phone Number">
+                </div>
+                <div class="form-group_1">
+                    <label for="message_1">Message:</label>
+                    <textarea id="message_1" name="message" placeholder="Your Message" rows="4"></textarea>
+                </div>
+                <div class="button-group_1">
+                    <button type="submit" class="contact-button_1">Contact</button>
+                    <button type="button" class="make-contact-button_1" onclick="makeContact_1()">Make Contact</button>
+                </div>
+            </form>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
@@ -307,6 +342,24 @@
             document.getElementById('popup').style.display = 'none';
             document.getElementById('popup-overlay').style.display = 'none';
             document.body.style.overflow = ''; // Enable scrolling again
+        }
+
+
+        function showModal_1() {
+            document.getElementById('modal-dialog_1').style.display = 'block';
+            document.getElementById('modal-overlay_1').style.display = 'block';
+            document.body.style.overflow = 'hidden'; // Disable scrolling
+        }
+
+        function hideModal_1() {
+            document.getElementById('modal-dialog_1').style.display = 'none';
+            document.getElementById('modal-overlay_1').style.display = 'none';
+            document.body.style.overflow = ''; // Enable scrolling again
+        }
+
+        function makeContact_1() {
+            alert('Make Contact button clicked!');
+            // Add any additional functionality here
         }
     </script>
 
